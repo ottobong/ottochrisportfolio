@@ -1,0 +1,8 @@
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="1003.781" height="504.5" viewBox="0 0 1003.781 504.5">
+  <g id="Layer_1" data-name="Layer 1" transform="translate(0 0)">
+    <path id="Path_1" data-name="Path 1" d="M278.961,46H117.668a117.668,117.668,0,0,0,0,235.335H278.961a117.668,117.668,0,1,0,0-235.188Zm0,167.029H117.668a49.45,49.45,0,0,1,0-98.87H278.961a49.45,49.45,0,0,1,0,98.87Z" transform="translate(0 89.318)" fill="#fe621d"/>
+    <path id="Path_2" data-name="Path 2" d="M486.809,46H325.458a117.668,117.668,0,0,0,0,235.335H486.809a117.668,117.668,0,0,0,0-235.188Zm0,167.029H325.458a49.45,49.45,0,1,1,0-98.87H486.809a49.45,49.45,0,0,1,0,98.87Z" transform="translate(403.464 89.318)" fill="#fe621d"/>
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="370.418" height="68.188" rx="34.094" transform="translate(490.88 134.082) rotate(90)" fill="#fe621d"/>
+    <rect id="Rectangle_2" data-name="Rectangle 2" width="370.418" height="68.188" rx="34.094" transform="translate(585.191) rotate(90)" fill="#fe621d"/>
+  </g>
+</svg>

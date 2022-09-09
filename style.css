@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* --------------Global styles----------------- */
+:root {
+    --hue1: 257;
+    --hue2: 47;
+    --bg-color: hsl(var(--hue1), 100%, 97%);
+    --main-color-1: #001932;
+    --main-color-highlight: #003B64;
+    --sec-color: #FE621D;
+    --neu-color: #ffffff;
+}
+
+/* --------------Main styles----------------- */
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: var(--bg-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+::selection {
+    background-color: var(--sec-color);
+    color: var(--main-color-1);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* --------------Reusable styles----------------- */
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 75em;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+}
+
+
+/* --------------Nav styles----------------- */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.logo {
+    margin-right: 1.5rem;
+    width: 100px;
+}
+
+header .logo {
+    height: 120px;
+}
+
+nav.container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.links {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links ul {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-link {
+    position: relative;
+    display: inline-block;
+    margin: 0 1rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+    color: var(--main-color-1);
+    font-weight: 500;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 10px;
+    border-radius: 5px;
+    background-color: var(--sec-color);
+    bottom: 0;
+    left: -5px;
+    z-index: -1;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--main-color-1);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    opacity: 1;
+}
+
+.toggle-btn {
+    color: var(--main-color-1);
+    min-width: 40px;
+    height: 40px;
+    background-color: var(--neu-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 0 10px 0px #0000001a;
+    transition: .3s;
+}
+
+.toggle-btn:hover {
+    filter: brightness(96%)
+}
