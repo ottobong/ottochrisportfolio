@@ -258,3 +258,64 @@ nav.container {
 .btn.secondary-btn:hover::before {
     width: 100%;
 }
+
+.showcase-image img {
+    padding-left: 40px;
+    padding-top: 20px;
+    width: 580px;
+}
+
+.showcase-image .dots {
+    width: 112px;
+}
+
+.showcase-image .dots1 {
+    width: 112px;
+}
+
+.showcase-image .dots2 {
+    width: 112px;
+}
+
+.showcase-image .rectangle {
+    width: 112px;
+}
+
+.showcase-image .rectangle1 {
+    width: 112px;
+}
+
+.showcase-image .dots {
+    position: absolute;
+    left: 95%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.showcase-image .rectangle {
+    position: absolute;
+    left: 40%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.showcase-image .rectangle1 {
+    position: absolute;
+    left: 100%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+}
+
+.showcase-image .dots1 {
+    position: absolute;
+    left: 40%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+}
+
+.showcase-image .dots2 {
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+}
