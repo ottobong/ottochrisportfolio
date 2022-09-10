@@ -492,3 +492,40 @@ nav.container {
     transform: translate(-50%, -50%);
 }
 
+/* --------------end----------------- */
+
+/* --------------My Services style----------------- */
+
+.services .container {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    column-gap: 6rem;
+    align-items: center;
+}
+
+/* .milestones {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start;
+}
+
+.milestones h2 {
+    color: var(--sec-color);
+    font-size: 1.3rem;
+}
+
+.milestones h2 span {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-right: .1rem;
+}
+
+.milestones h5 {
+    color: var(--main-color-1);
+    line-height: .9;
+    font-weight: 500;
+    font-size: 0.8rem;
+} */

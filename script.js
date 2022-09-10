@@ -1,5 +1,9 @@
 const header = document.querySelector("header");
 
+
+const ml_section = document.querySelector(".milestones");
+const ml_counters = document.querySelector(".number span");
+
 // Sticky Navbar
 
 function stickyNavbar() {
@@ -20,3 +24,9 @@ let sr = ScrollReveal({
 
 sr.reveal(".showcase-info", { delay: 600 });
 sr.reveal(".showcase-image", { delay: 600, origin: "top" });
+
+
+function mlCounter() {
+    if (!hasreached(ml_section)) return;
+    console.log("You've reached ");
+}
