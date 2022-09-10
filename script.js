@@ -9,3 +9,14 @@ function stickyNavbar() {
 stickyNavbar();
 
 window.addEventListener("scroll", stickyNavbar);
+
+
+// Scroll reveal code
+
+let sr = ScrollReveal({
+    duration: 2500,
+    distance: "60px",
+});
+
+sr.reveal(".showcase-info", { delay: 600 });
+sr.reveal(".showcase-image", { delay: 600, origin: "top" });
