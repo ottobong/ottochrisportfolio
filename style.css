@@ -529,3 +529,56 @@ nav.container {
     font-weight: 500;
     font-size: 0.8rem;
 } */
+
+
+.services-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: -60px;
+    column-gap: 2rem;
+    row-gap: 4.4rem;
+}
+
+.srv-card {
+    background-color: var(--neu-color);
+    border-radius: 15px;
+    padding: 2.5rem 2.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    min-height: 280px;
+}
+
+.srv-card h3 {
+    color: var(--main-color-1);
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+.srv-card .text {
+    margin: .7rem 0;
+    font-size: .7rem;
+}
+
+.srv-card:nth-child(2) {
+    transform: translateY(2.2rem);
+}
+
+.srv-card:nth-child(3) {
+    transform: translateY(-2.2rem);
+}
+
+.services-grid::before {
+    content: "";
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 15px solid var(--main-color-1);
+    z-index: -1;
+    opacity: 0.07;
+}
