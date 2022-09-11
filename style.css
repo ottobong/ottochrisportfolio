@@ -290,10 +290,12 @@ nav.container {
 
 .showcase-image .rectangle {
     width: 112px;
+    opacity: .3;
 }
 
 .showcase-image .rectangle1 {
     width: 112px;
+    opacity: .3;
 }
 
 .showcase-image .dots {
@@ -581,4 +583,25 @@ nav.container {
     border: 15px solid var(--main-color-1);
     z-index: -1;
     opacity: 0.07;
+}
+
+.services .grid {
+    position: absolute;
+    left: 30%;
+    top: 20%;
+}
+
+.services .grid2 {
+    position: absolute;
+    left: 60%;
+    top: 80%;
+}
+
+/* --------------end----------------- */
+
+
+/* --------------Portfolio Styling----------------- */
+
+.portfolio-header {
+    display: flex;
 }
