@@ -13,6 +13,7 @@
     --neu-color: #ffffff;
     --neu-color-2: #ffffff7e;
     --section-padding: 7rem;
+    --overlay: #ffffff56;
     
 }
 
@@ -606,6 +607,7 @@ nav.container {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+    margin-bottom: 4rem;
 }
 
 .portfolio-title {
@@ -630,8 +632,99 @@ nav.container {
 .portfolio-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.prt-card {
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: var(--neu-color);
+    height: 265px;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+.prt-image {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
 }
 
 .prt-image img {
+    width: 105%;
+}
+
+.prt-desc {
+    padding: 1.1rem 1.6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.prt-desc h3 {
+    font-size: .95rem;
+    color: var(--main-color-1);
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.btn.secondary-btn.sm {
+    padding: .07rem .1rem;
+    font-size: .78rem;
+    border-bottom-width: 2px;
+}
+
+.btn.secondary-btn.sm::before {
+    height: 2px;
+    bottom: -2px;
+}
+
+.prt-overlay {
+    position: absolute;
     width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    backdrop-filter: blur(0px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.prt-image:hover .prt-overlay {
+    pointer-events: auto;
+    background-color: var(--overlay);
+    backdrop-filter: blur(10px);
+}
+
+.prt-icon {
+    color: var(--main-color-1);
+    font-size: 1.1rem;
+    margin: 0 0.4rem;
+    background-color: var(--sec-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transform: translateY(15px);
+    opacity: 0;
+    transition: .3s;
+}
+
+.prt-icon:hover {
+    background-color: var(--sec-color-dark);
+}
+
+.prt-image:hover .part-icon {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: .3s var(--main-color-1);
 }
