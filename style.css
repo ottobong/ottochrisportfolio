@@ -604,4 +604,34 @@ nav.container {
 
 .portfolio-header {
     display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.portfolio-title {
+    padding-bottom: 1rem;
+}
+
+.filter-btn {
+    display: inline-block;
+    color: var(--main-color-1);
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: .85rem;
+    font-weight: 600;
+    letter-spacing: .4px;
+    margin-left: 1.3rem;
+    font-family: inherit;
+    text-transform: uppercase;
+}
+
+.portfolio-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.prt-image img {
+    width: 100%;
 }
