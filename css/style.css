@@ -629,6 +629,10 @@ nav.container {
     text-transform: uppercase;
 }
 
+.filter-btn.mixitup-control-active {
+    color: var(--sec-color);
+}
+
 .portfolio-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -727,4 +731,42 @@ nav.container {
     opacity: 1;
     transform: translateY(0px);
     transition: .3s var(--i);
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 11;
+
+}
+
+.modal-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #00000096;
+}
+
+.slider-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 900px;
+}
+
+.slider-wrap img{
+    width: 100%;
+    display: none;
+}
+
+.slider-wrap img.showImage {
+    display: block;
 }

@@ -30,3 +30,15 @@ function mlCounter() {
     if (!hasreached(ml_section)) return;
     console.log("You've reached ");
 }
+
+
+// Portfolio Filter code
+
+let mixer = mixitup(".portfolio-gallery", {
+    selectors: {
+        target: ".prt-card",
+    },
+    animation: {
+        duration: 500,
+    },
+});
