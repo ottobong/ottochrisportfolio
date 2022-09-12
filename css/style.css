@@ -723,8 +723,8 @@ nav.container {
     background-color: var(--sec-color-dark);
 }
 
-.prt-image:hover .part-icon {
+.prt-image:hover .prt-icon {
     opacity: 1;
     transform: translateY(0px);
-    transition: .3s var(--main-color-1);
+    transition: .3s var(--i);
 }
