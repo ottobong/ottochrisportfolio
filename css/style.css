@@ -11,7 +11,8 @@
     --sec-color: #FE621D;
     --sec-color-dark: #c9521f;
     --neu-color: #ffffff;
-    --neu-color-2: #ffffff7e;
+    --neu-color-2: #fcfcfc7e;
+    --neu-color-3: #EFEFEF;
     --section-padding: 7rem;
     --overlay: #ffffff56;
     
@@ -23,6 +24,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -165,11 +170,12 @@ nav.container {
     transition: 0.3s;
 }
 
-.nav-link:hover {
+.nav-link:hover, .nav-link.active {
     color: var(--main-color-1);
 }
 
-.nav-link:hover::after {
+.nav-link:hover::after,
+.nav-link.active {
     width: 100%;
     opacity: 1;
 }
@@ -243,6 +249,13 @@ nav.container {
     letter-spacing: .4px;
     text-transform: capitalize;
     transition: .3s;
+    min-width: 125px;
+    text-align: center;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -817,7 +830,7 @@ nav.container {
 
 /* --------------Testimonial Styling----------------- */
 
-.testimonial {
+/* .testimonial {
     padding: ;
 }
 
@@ -843,7 +856,7 @@ nav.container {
     color: #fff;
 } */
 
-.section-background {
+/* .section-background {
     position: absolute;
     width: 100vw;
     max-width: 75rem;
@@ -861,7 +874,7 @@ nav.container {
     height: 450px;
     bottom: 4%;
     right: 5%;
-}
+} */
 
 /* --------------end_incomplete----------------- */
 
@@ -875,5 +888,111 @@ nav.container {
 }
 
 .mail {
-    
+    color: var(--main-color-1);
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: .3s;
+}
+
+.mail i {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-left: 2px;
+    transform: translateY(3px);
+    transition: .3s margin-left;
+}
+
+.mail:hover {
+    color: var(--sec-color);
+}
+
+.mail:hover i {
+    margin-left: 10px;
+}
+
+.contact-form {
+    background-color: var(--neu-color);
+    border-radius: 20px;
+    padding: 3.5rem 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form h3 {
+    color: var(--main-color-1);
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 1.6rem;
+    line-height: 0.9;
+}
+
+.form-input {
+    display: inline-block;
+    padding: 0.9rem 1.5rem;
+    background-color: var(--neu-color-3);
+    border: 2px solid var(--neu-color-3);
+    width: 100%;
+    border-radius: 10px;
+    font-family: inherit; 
+    font-size: .85rem;
+    font-weight: 500;
+    color: var(--main-color-1);
+    outline: none;
+    transition: .3s;
+}
+
+.form-input::placeholder {
+    color: var(--main-color-1);
+}
+
+.form-inpput:hover {
+    filter: brightness(97%);
+}
+
+.form-input:focus {
+    filter: brightness(100%);
+    background: var(--neu-color);
+    border-color: var(--sec-color);
+}
+
+textarea.form-input {
+    resize: none;
+    min-height: 170px;
+}
+
+.contact-form .form-input {
+    margin-bottom: 1.5rem;
+}
+
+/* --------------end----------------- */
+
+
+/* --------------footer styling----------------- */
+
+footer {
+    padding: 4rem 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer .social-media {
+    display: flex;
+}
+
+.social-link {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-left: 1rem;
+    background-color: var(--bg-color);
+    color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
 }

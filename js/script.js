@@ -12,6 +12,8 @@ const images = document.querySelectorAll(".images img");
 const prev_btn = document.querySelector(".prev-btn")
 const next_btn = document.querySelector(".next-btn")
 
+const links = document.querySelectorAll(".nav-links")
+
 // Sticky Navbar
 
 function stickyNavbar() {
@@ -21,6 +23,10 @@ function stickyNavbar() {
 stickyNavbar();
 
 window.addEventListener("scroll", stickyNavbar);
+
+window.addEventListener("scroll", () => {
+    activeLink();
+});
 
 
 // Scroll reveal code
@@ -92,3 +98,24 @@ function changeImage(index) {
     images.forEach(img => img.classList.remove("showImage"))
     images[index].classList.add("showImage");
 }
+
+//Menu active
+function activeLink() {
+    let sections = document.querySelectorAll("section[id]");
+    let passedSections = Array.from(sections)
+        .map((sct, i) => {
+            return {
+                y: sct.getBoundingClientRect().top - header.offsetHeight,
+                id: i,
+            }
+        })
+        .filter((sct) => sct.y <= 0);
+
+    let currSectionID = passedSections.at(-1).id;
+
+    links.forEach((l) => l.classList.remove("active"));
+    links[currSectionID].classList.add("active");
+
+}
+
+activeLink();

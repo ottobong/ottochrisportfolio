@@ -19,21 +19,26 @@
     <header>
         <nav class="container">
 
-            <img src="./img/logo.svg" alt="ottobong Christopher" class="logo">
+            <a href="#">
+                <img src="./img/logo.svg" alt="ottobong Christopher" class="logo">
+            </a>
 
             <div class="links">
                 <ul>
                     <li>
-                        <a href="#" class="nav-link">Home</a>
+                        <a href="#home" class="nav-link">Home</a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link">About me</a>
+                        <a href="#about" class="nav-link">About me</a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link">What I do</a>
+                        <a href="#service" class="nav-link">Services</a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link">Portfolio</a>
+                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav-link">Contact</a>
                     </li>
                     <li>
                         <a href="#" class="nav-link">Learn with me</a>
@@ -53,7 +58,7 @@
     <main>
 
         <!-- Hero Section -->
-        <section class="showcase-area">
+        <section class="showcase-area" id="home">
             <div class="container">
                 <div class="showcase-info">
                     <h2 class="sub-heading">Product Designer | Frontend Developer</h2>
@@ -78,7 +83,7 @@
         </section>
 
         <!-- Features -->
-        <section class="about section">
+        <section class="about section" id="about">
             <div class="container">
                 <div class="about-grid">
                     
@@ -168,7 +173,7 @@
         </section>
 
         <!-- My services -->
-        <section class="services section">
+        <section class="services section" id="service">
             <img src="./img/colorgrid4.png" class="grid">
             <img src="./img/colorgrid3.png" class="grid2">
             <div class="container">
@@ -243,7 +248,7 @@
         </section>
 
         <!-- Portfolio -->
-        <section class="portfolio section">
+        <section class="portfolio section" id="portfolio">
             <div class="modal">
                 <div class="modal-overlay">
 
@@ -395,6 +400,7 @@
             </div>
         </section>
 
+
         <!-- Testimonial -->
         <!-- <section class="testimonial section">
             <div class="container">
@@ -409,7 +415,8 @@
             </div>
         </section> -->
 
-        <section class="contact section">
+        <!-- Contact -->
+        <section class="contact section" id="contact">
             <div class="container">
                 <div class="contact-info">
                     <h3 class="sub-heading">Contact me</h3>
@@ -418,13 +425,52 @@
                         Do you have an idea you would like to build? You can reach out to me now!
                     </p>
 
-                    <a href="mailto:christopherottobong@gmail.com" class="mail">christopherottobong@gmail.com <i class="uil uil-arrow-right"></i></a>
+                    <a href="mailto:christopherottobong@gmail.com" class="mail">My Email <i class="uil uil-arrow-right"></i></a>
                 </div>
+
+                <form action="index.html" class="contact-form">
+                    <h3>Send me a message</h3>
+                    <input type="text" class="form-input" placeholder="Your Name" required> 
+                    <input type="email" class="form-input" placeholder="Your Email" required> 
+                    <textarea placeholder="Project Details" class="form-input"></textarea>
+                    <input type="submit" value="Send" class="btn">
+                </form>
             </div>
         </section>
 
         <section style="height: 200px;"></section>
     </main>
+
+    <footer>
+        <div class="container">
+            <a href="#">
+                <img src="./img/logo.svg" alt="ottobong Christopher" class="logo">
+            </a>
+            <p class="text">&copy; Copyright 2022. All rights reserved</p>
+            <ul class="social-media">
+                <li>
+                    <a href="#" class="social-link">
+                        <i class="uil uil-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="social-link">
+                        <i class="uil uil-behance"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="social-link">
+                        <i class="uil uil-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="social-link">
+                        <i class="uil uil-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 
 
 
