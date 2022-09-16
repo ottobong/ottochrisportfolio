@@ -4,10 +4,14 @@
 :root {
     --hue1: 257;
     --hue2: 47;
-    --bg-color: hsl(var(--hue1), 100%, 97%);
     --main-color-1: #001932;
     --main-color-alt: #001932a8;
     --main-color-highlight: #003B64;
+    --heading: #001932;
+    --sub-heading: #001932;
+    --text: #001932a8;
+    --button-text: #001932;
+    --button-bg: #FE621D;
     --sec-color: #FE621D;
     --sec-color-dark: #c9521f;
     --neu-color: #ffffff;
@@ -15,8 +19,32 @@
     --neu-color-3: #EFEFEF;
     --section-padding: 7rem;
     --overlay: #ffffff56;
-    
 }
+
+body {
+    --bg-color: hsl(var(--hue1), 100%, 97%);
+}
+
+body.dark {
+    --bg-color: #090022;
+    --heading: #FE621D;
+    --sub-heading: #FE621D;
+    --text: #fcfcfc7e;
+    --neu-color: #001932;
+    --neu-color-2: #00193246;
+    --neu-color-3: #090022;
+    --button-text: #FFFFFF;
+}
+
+body.dark .filter-btn {
+    color: var(--button-text);
+}
+
+body.dark .filter-btn.mixitup-control-active {
+    color: var(--heading);
+}
+
+
 
 /* --------------Main styles----------------- */
 
@@ -66,7 +94,7 @@ ul {
 }
 
 .sub-heading {
-    color: var(--main-color-1);
+    color: var(--sub-heading);
     text-transform: uppercase;
     font-size: 0.85rem;
     letter-spacing: 0.5px;
@@ -77,7 +105,7 @@ ul {
 }
 
 .heading {
-    color: var(--main-color-1);
+    color: var(--heading);
     font-size: 3rem;
     font-family: "Abril Fatface", cursive;
     font-size: 400;
@@ -85,7 +113,7 @@ ul {
 }
 
 .text {
-    color: var(--main-color-alt);
+    color: var(--text);
     font-size: 0.9rem;
     margin: 2rem 0;
 }
@@ -150,7 +178,7 @@ nav.container {
     text-transform: uppercase;
     font-size: 0.8rem;
     letter-spacing: 0.5px;
-    color: var(--main-color-1);
+    color: var(--text);
     font-weight: 500;
     opacity: 0.8;
     transition: 0.3s;
@@ -172,7 +200,7 @@ nav.container {
 
 .nav-link:hover, 
 .nav-link.active {
-    color: var(--main-color-1);
+    color: var(--button-text);
 }
 
 .nav-link:hover::after,
@@ -182,7 +210,7 @@ nav.container {
 }
 
 .toggle-btn {
-    color: var(--main-color-1);
+    color: var(--heading);
     min-width: 40px;
     height: 40px;
     background-color: var(--neu-color);
@@ -244,8 +272,8 @@ nav.container {
     display: inline-block;
     padding: .9rem 1.75rem;
     border-radius: 12px;
-    background-color: var(--sec-color);
-    color: var(--main-color-1);
+    background-color: var(--button-bg);
+    color: var(--button-text);
     font-size: .85rem;
     letter-spacing: .4px;
     text-transform: capitalize;
@@ -266,7 +294,7 @@ nav.container {
 .btn.secondary-btn {
     position: relative;
     background-color: transparent;
-    color: var(--main-color-1);
+    color: var(--button-text);
     font-weight: 500;
     font-size: 0.9rem;
     letter-spacing: 0px;
@@ -409,55 +437,55 @@ nav.container {
 }
 
 .st1 {
-    fill: var(--main-color-1);
-    opacity: 0.4;
+    fill: var(--heading);
+    opacity: 0.5;
 }
 
 .st2 {
-    stroke: var(--main-color-1);
-    fill: var(--sec-color);
+    stroke: var(--heading);
+    fill: var(--bg-color);
 }
 
 .st2-a {
-    stroke: var(--sec-color);
+    stroke: var(--heading);
 }
 
 .st3 {
-    stroke: var(--main-color-1);
+    stroke: var(--heading);
     
 }
 
 .st4 {
-    stroke: var(--main-color-1);
+    stroke: var(--heading);
 }
 
 .st5 {
-    stroke: var(--main-color-1);
+    stroke: var(--heading);
     fill: var(--sec-color);
 }
 
 .st6 {
-    stroke: var(--main-color-1);
+    stroke: var(--heading);
     
 }
 
 .st7 {
-    stroke: var(--main-color-1);
+    stroke: var(--heading);
     
 }
 
 .st8 {
-    stroke: var(--main-color-1);
+    stroke: var(--heading);
     
     
 }
 
 .st9 {
-    stroke: var(--main-color-1);
+    stroke: var(--heading);
 }
 
 .about-card h3 {
-    color: var(--main-color-1);
+    color: var(--heading);
     font-weight: 600;
     font-size: .9rem;
     margin-top: 1rem;
@@ -476,7 +504,7 @@ nav.container {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 15px solid var(--main-color-1);
+    border: 15px solid var(--heading);
     z-index: -1;
     opacity: 0.07;
 }
@@ -574,7 +602,7 @@ nav.container {
 }
 
 .srv-card h3 {
-    color: var(--main-color-1);
+    color: var(--heading);
     font-weight: 500;
     font-size: 1.05rem;
 }
@@ -600,7 +628,7 @@ nav.container {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 15px solid var(--main-color-1);
+    border: 15px solid var(--heading);
     z-index: -1;
     opacity: 0.07;
 }
@@ -639,7 +667,7 @@ nav.container {
 
 .filter-btn {
     display: inline-block;
-    color: var(--main-color-1);
+    color: var(--heading);
     background: none;
     outline: none;
     border: none;
@@ -653,8 +681,10 @@ nav.container {
 }
 
 .filter-btn.mixitup-control-active {
-    color: var(--sec-color);
+    color: var(--button-bg);
 }
+
+
 
 .portfolio-gallery {
     display: grid;
@@ -692,7 +722,7 @@ nav.container {
 
 .prt-desc h3 {
     font-size: .95rem;
-    color: var(--main-color-1);
+    color: var(--text);
     font-weight: 600;
     text-transform: capitalize;
 }
@@ -889,7 +919,7 @@ nav.container {
 }
 
 .mail {
-    color: var(--main-color-1);
+    color: var(--heading);
     font-weight: 500;
     font-size: 1.1rem;
     transition: .3s;
@@ -920,7 +950,7 @@ nav.container {
 }
 
 .contact-form h3 {
-    color: var(--main-color-1);
+    color: var(--heading);
     font-size: 1.3rem;
     font-weight: 500;
     margin-bottom: 1.6rem;
@@ -937,13 +967,14 @@ nav.container {
     font-family: inherit; 
     font-size: .85rem;
     font-weight: 500;
-    color: var(--main-color-1);
+    color: var(--heading);
     outline: none;
     transition: .3s;
 }
 
 .form-input::placeholder {
-    color: var(--main-color-1);
+    color: var(--heading);
+    opacity: .2;
 }
 
 .form-input:hover {
@@ -990,8 +1021,8 @@ footer .social-media {
     height: 35px;
     border-radius: 50%;
     margin-left: 1rem;
-    background-color: var(--bg-color);
-    color: var(--main-color);
+    background-color: var(--heading);
+    color: var(--neu-color-3);
     display: flex;
     align-items: center;
     justify-content: center;
