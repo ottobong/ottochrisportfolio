@@ -945,7 +945,7 @@ nav.container {
     color: var(--main-color-1);
 }
 
-.form-inpput:hover {
+.form-input:hover {
     filter: brightness(97%);
 }
 
