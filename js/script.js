@@ -12,7 +12,7 @@ const images = document.querySelectorAll(".images img");
 const prev_btn = document.querySelector(".prev-btn")
 const next_btn = document.querySelector(".next-btn")
 
-const links = document.querySelectorAll(".nav-links")
+const links = document.querySelectorAll(".nav-link")
 
 // Sticky Navbar
 

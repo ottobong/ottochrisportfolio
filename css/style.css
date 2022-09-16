@@ -170,12 +170,13 @@ nav.container {
     transition: 0.3s;
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover, 
+.nav-link.active {
     color: var(--main-color-1);
 }
 
 .nav-link:hover::after,
-.nav-link.active {
+.nav-link.active::after {
     width: 100%;
     opacity: 1;
 }
