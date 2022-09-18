@@ -1288,7 +1288,19 @@ footer .social-media {
 
     .showcase-image img {
         padding-left: 0;
-        width: 520px;
+        width: 350px;
+    }
+
+    .showcase-image .dots {
+        width: 60px;
+    }
+
+    .showcase-image .dots1 {
+        width: 60px;
+    }
+
+    .showcase-image .dots2 {
+        width: 60px;
     }
 
     .about .container {
@@ -1330,8 +1342,20 @@ footer .social-media {
         border-width: 10px;
     }
 
+    .skills-box {
+        padding: 2rem;
+    }
+    
+    .skills .dots2 {
+        left: 50%;
+    }
+
     .services .container {
         grid-template-columns: 1fr;
+    }
+
+    .services-grid {
+        margin-top: 60px;
     }
 
     .portfolio .container {
@@ -1341,5 +1365,7 @@ footer .social-media {
     .contact .container {
         grid-template-columns: 1fr;
     }
+
+
 }
 
