@@ -153,4 +153,6 @@ toggle_btn.addEventListener("click", () => {
 
 //hamburger menu
 
-hamburger.addEventListener("click", )
+hamburger.addEventListener("click", () => {
+    document.body.classList.toggle("open");
+})

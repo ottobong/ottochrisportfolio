@@ -257,6 +257,20 @@ nav.container {
 .hamburger .bar:last-child {
     bottom: 1rem;
 }
+
+body.open .hamburger .bar:first-child {
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+    transition: .2s;
+}
+
+body.open .hamburger .bar:last-child {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    transition: .2s;
+}
+
+
 /* --------------End----------------- */
 
 
