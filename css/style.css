@@ -657,6 +657,7 @@ nav.container {
 
 .portfolio .container {
     transition: .4s;
+    margin-top: -60px;
 }
 
 .portfolio-header {
@@ -921,6 +922,7 @@ nav.container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 4rem;
+    margin-top: -60px;
 }
 
 .mail {
@@ -1048,9 +1050,23 @@ footer .social-media {
         font-size: 2rem;
     }
 
+    .showcase-area .container {
+        column-gap: 2rem;
+    }
+
     .showcase-area .heading {
         font-size: 2.7rem;
     }
+
+    .showcase-image img {
+        margin-left: -40px;
+    }
+
+    .showcase-image .dots {
+    width: 112px;
+    top: 10%;
+    left: 100%;
+}
 
     .text {
         font-size: 0.84rem;
@@ -1079,5 +1095,22 @@ footer .social-media {
 
     .showcase-area {
         padding: 100px 0;
+    }
+
+    .showcase-area .container {
+        grid-template-columns: 1fr 400px;
+        height: 450px;
+    }
+
+    .services .container {
+        column-gap: 2.5rem;
+    }
+
+    .contact .container {
+        column-gap: 2.5rem;
+    }
+
+    .contact-form {
+        padding: 2.5rem 2rem;
     }
 }
