@@ -1113,4 +1113,17 @@ footer .social-media {
     .contact-form {
         padding: 2.5rem 2rem;
     }
+
+    .filter-btn {
+        font-size: .75rem;
+    }
 }
+
+/* --------------end----------------- */
+
+@media screen and (max-width: 768px) {
+    :root {
+        --section-padding: 4.5rem;
+    }
+}
+
