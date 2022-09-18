@@ -27,6 +27,7 @@ body {
 
 body.dark {
     --bg-color: #090022;
+    --bg-color-hamburger: #0e0033;
     --heading: #FE621D;
     --sub-heading: #FE621D;
     --text: #fcfcfc7e;
@@ -165,8 +166,7 @@ nav.container {
 
 .links {
     flex: 1;
-    /* display: flex; */
-    display: none;
+    display: flex;
     justify-content: space-between;
 }
 
@@ -234,6 +234,7 @@ nav.container {
 }
 
 .hamburger {
+    display: none;
     padding: 1rem 0;
     height: 12px;
     width: 25px;
@@ -252,22 +253,24 @@ nav.container {
 
 .hamburger .bar:first-child {
     top: 1rem;
+    transition: top .2s 0.15s, transform 0.3s;
 }
 
 .hamburger .bar:last-child {
     bottom: 1rem;
+    transition: bottom .2s 0.15s, transform 0.3s;
 }
 
 body.open .hamburger .bar:first-child {
     top: 50%;
     transform: translateY(-50%) rotate(-45deg);
-    transition: .2s;
+    transition: top .2s, transform 0.3s 0.1s;
 }
 
 body.open .hamburger .bar:last-child {
-    top: 50%;
-    transform: translateY(-50%) rotate(45deg);
-    transition: .2s;
+    bottom: 50%;
+    transform: translateY(50%) rotate(45deg);
+    transition: bottom .2s, transform 0.3s 0.1s;
 }
 
 
@@ -1164,6 +1167,31 @@ footer .social-media {
 @media screen and (max-width: 768px) {
     :root {
         --section-padding: 4.5rem;
+    }
+
+    header {
+        background-color: var(--bg-color-hamburger);
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .links {
+        order: 3;
+        flex-basis: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem 0 2rem;
+    }
+
+    .links ul {
+        flex-direction: column;
+    }
+
+    .nav-link {
+        margin: 1.5rem 0;
     }
 }
 
