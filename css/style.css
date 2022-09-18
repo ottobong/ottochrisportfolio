@@ -165,7 +165,8 @@ nav.container {
 
 .links {
     flex: 1;
-    display: flex;
+    /* display: flex; */
+    display: none;
     justify-content: space-between;
 }
 
@@ -231,6 +232,24 @@ nav.container {
 .toggle-btn:hover {
     filter: brightness(96%)
 }
+
+.hamburger {    
+    float: right;
+    height: 25px;
+    width: 40px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background-color: pink;
+}
+
+.hamburger i {
+    width: 200px;
+}
+
 /* --------------End----------------- */
 
 
