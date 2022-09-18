@@ -16,6 +16,8 @@ const links = document.querySelectorAll(".nav-link");
 
 const toggle_btn = document.querySelector(".toggle-btn");
 
+const hamburger = document.querySelector(".hamburger");
+
 
 
 // Sticky Navbar
@@ -149,3 +151,6 @@ toggle_btn.addEventListener("click", () => {
 });
 
 
+//hamburger menu
+
+hamburger.addEventListener("click", )
