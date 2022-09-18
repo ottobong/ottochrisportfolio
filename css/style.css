@@ -1290,5 +1290,56 @@ footer .social-media {
         padding-left: 0;
         width: 520px;
     }
+
+    .about .container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-grid {
+        order: 3;
+    }
+
+    .heading br {
+        display: none;
+    }
+
+    .about .text {
+        margin: 1rem 0 1.5rem;
+    }
+
+    .about-grid {
+        grid-template-columns: 150px 150px;
+        grid-template-rows: 150px 150px;
+        margin: 2.5rem 0 0 0;
+        column-gap: 2rem;
+        row-gap: 80px;
+    }
+
+    .icon {
+        width: 50px;
+    }
+
+    .about-card h3 {
+        font-size: 0.8rem;
+        margin-top: 0.5rem;
+    }
+
+    .about-grid::before {
+        width: 150px;
+        height: 150px;
+        border-width: 10px;
+    }
+
+    .services .container {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio .container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact .container {
+        grid-template-columns: 1fr;
+    }
 }
 
