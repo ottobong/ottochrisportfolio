@@ -4,11 +4,9 @@ import { navItems } from "@/data";
 
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import RecentProjects from "@/components/RecentProjects";
-import Hero from "@/components/Hero";
 import { Boxes } from "@/components/ui/background-boxes";
-import { cn } from "@/lib/utils";
 
-const caseStudies = () => {
+const CaseStudies = () => {
   return (
     <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
       <div className="max-w-7xl w-full">
@@ -28,4 +26,4 @@ const caseStudies = () => {
   );
 };
 
-export default caseStudies;
+export default CaseStudies;

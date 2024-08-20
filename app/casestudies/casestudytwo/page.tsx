@@ -5,14 +5,15 @@ import { navItems } from "@/data";
 
 import Footer from "@/components/Footer";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
-import { CaseStudyOne } from "@/components/CaseStudyOne";
+import { CaseStudyTwo } from "@/components/CaseStudyTwo";
 
 
 
-const StudyOne = () => {
+const StudyTwo = () => {
   return (
     <section
-      className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5"
+      className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5
+      py-20"
     >
       <FloatingNav navItems={navItems} />
       <h1 className="heading pt-24">
@@ -65,10 +66,8 @@ const StudyOne = () => {
         Reach out to me today and let&apos;s discuss how I can help you achieve
         your goals.
       </p>
-      <div>
-        <CaseStudyOne />
-
-        
+      <div className="pb-24">
+        <CaseStudyTwo />
       </div>
 
       {/* Conclusion */}
@@ -85,4 +84,4 @@ const StudyOne = () => {
   );
 };
 
-export default StudyOne;
+export default StudyTwo;

@@ -2,13 +2,13 @@
 import React from "react";
 import { HeroParallax } from "./ui/hero-parallax";
 
-export function CaseStudyOne() {
+export function CaseStudyTwo() {
   return (
     <HeroParallax
       products={products}
       headerTitle={
         <>
-          Case Study One
+          Case Study Two
           <br />
           Awesome Project
         </>
