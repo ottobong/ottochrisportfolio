@@ -5,6 +5,7 @@ import { navItems } from "@/data";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import RecentProjects from "@/components/RecentProjects";
 import { Boxes } from "@/components/ui/background-boxes";
+import Footer from "@/components/Footer";
 
 const CaseStudies = () => {
   return (
@@ -22,6 +23,8 @@ const CaseStudies = () => {
         </div>
         <RecentProjects hideTitle={true} />
       </div>
+
+      <Footer />
     </main>
   );
 };
