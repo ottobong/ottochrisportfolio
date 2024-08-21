@@ -133,7 +133,7 @@ const StudyThree = () => {
             firstImage="/cta-before.png"
             secondImage="/cta-after.png"
             firstImageClassName="object-cover object-left-top w-full"
-            secondImageClassnme="object-cover object-left-top w-full"
+            secondImageClassname="object-cover object-left-top w-full"
             className="w-full h-full rounded-[22px] md:rounded-lg"
             slideMode="hover"
             autoplay={true}
