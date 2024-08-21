@@ -64,7 +64,7 @@ const Hero = () => {
             Nigeria."
             className="text-center text-[24px] md:text-md lg:text-xl"
           />
-          <a href="#about">
+          <a href="/casestudies">
             <MagicButton
               title="Show my work"
               icon={<FaLocationArrow />}
