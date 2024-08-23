@@ -8,12 +8,12 @@ export function CaseStudyOne() {
       products={products}
       headerTitle={
         <>
-          Case Study One
+          Medic Dispatch
           <br />
-          Awesome Project
+          Mobile & Web App
         </>
       }
-      headerSubtitle="This is a detailed case study of our awesome project. We'll walk you through our process, challenges, and solutions."
+      headerSubtitle="Healthcare at your fingertips"
     />
   );
 }
@@ -22,81 +22,81 @@ export function CaseStudyOne() {
 
 export const products = [
   {
-    title: "Moonbeam",
+    title: "Specialist App",
     link: "#",
-    thumbnail: "/bg.png",
+    thumbnail: "/medicapp1.jpg",
   },
   {
-    title: "Cursor",
+    title: "Specialist App",
     link: "#",
-    thumbnail: "/bg.png",
+    thumbnail: "/medicapp2.jpg",
   },
   {
-    title: "Rogue",
+    title: "User App",
     link: "#",
-    thumbnail: "/bg.png",
-  },
-
-  {
-    title: "Editorially",
-    link: "#",
-    thumbnail: "/bg.png",
-  },
-  {
-    title: "Editrix AI",
-    link: "#",
-    thumbnail: "/bg.png",
-  },
-  {
-    title: "Pixel Perfect",
-    link: "#",
-    thumbnail: "/bg.png",
+    thumbnail: "/userapp1.jpg",
   },
 
   {
-    title: "Algochurn",
+    title: "User App",
     link: "#",
-    thumbnail: "/bg.png",
+    thumbnail: "/userapp2.jpg",
   },
   {
-    title: "Aceternity UI",
+    title: "Healthcare Provider Dashboard",
     link: "#",
-    thumbnail: "/bg.png",
+    thumbnail: "/Medic01.jpg",
   },
   {
-    title: "Tailwind Master Kit",
+    title: "Healthcare Provider Dashboard",
     link: "#",
-    thumbnail: "/bg.png",
-  },
-  {
-    title: "SmartBridge",
-    link: "#",
-    thumbnail: "/bg.png",
-  },
-  {
-    title: "Renderwork Studio",
-    link: "#",
-    thumbnail: "/bg.png",
+    thumbnail: "/Medic02.jpg",
   },
 
   {
-    title: "Creme Digital",
+    title: "Healthcare Provider Dashboard",
     link: "#",
-    thumbnail: "/bg.png",
+    thumbnail: "/Medic03.jpg",
   },
   {
-    title: "Golden Bells Academy",
+    title: "Healthcare Provider Dashboard",
     link: "#",
-    thumbnail: "/bg.png",
+    thumbnail: "/Medic04.jpg",
   },
   {
-    title: "Invoker Labs",
+    title: "Healthcare Provider Dashboard",
     link: "#",
-    thumbnail: "/bg.png",
+    thumbnail: "/Medic05.jpg",
   },
   {
-    title: "E Free Invoice",
+    title: "Healthcare Provider Dashboard",
     link: "#",
-    thumbnail: "/bg.png",
+    thumbnail: "/Medic06.jpg",
+  },
+  {
+    title: "Healthcare Provider Dashboard",
+    link: "#",
+    thumbnail: "/Medic07.jpg",
+  },
+
+  {
+    title: "Healthcare Provider Dashboard",
+    link: "#",
+    thumbnail: "/Medic08.jpg",
+  },
+  {
+    title: "Healthcare Provider Dashboard",
+    link: "#",
+    thumbnail: "/Medic09.jpg",
+  },
+  {
+    title: "Healthcare Provider Dashboard",
+    link: "#",
+    thumbnail: "/Medic10.jpg",
+  },
+  {
+    title: "Healthcare Provider Dashboard",
+    link: "#",
+    thumbnail: "/Medic01.jpg",
   },
 ];
