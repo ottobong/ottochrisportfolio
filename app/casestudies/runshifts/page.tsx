@@ -5,7 +5,6 @@ import { navItems } from "@/data";
 
 import Footer from "@/components/Footer";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
-import { CaseStudyTwo } from "@/components/CaseStudyTwo";
 
 
 
@@ -67,7 +66,7 @@ const StudyTwo = () => {
         your goals.
       </p>
       <div className="pb-24">
-        <CaseStudyTwo />
+    
       </div>
 
       {/* Conclusion */}
