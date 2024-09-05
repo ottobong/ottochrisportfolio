@@ -1,4 +1,4 @@
-import { FaLocationArrow } from "react-icons/fa6";
+import { FaCalendarCheck, FaLocationArrow } from "react-icons/fa6";
 
 import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
@@ -36,14 +36,14 @@ const Hero = () => {
         <div
           // change the bg to bg-black-100, so it matches the bg color and will blend in
           className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100
-         bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
+        bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
         />
       </div>
 
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Dynamic Web Magic with Next.js
+            {/* Add the title here */}
           </p>
           {/**
            *  Link: https://ui.aceternity.com/components/text-generate-effect
@@ -59,15 +59,10 @@ const Hero = () => {
             their language.
           </p>
           &nbsp;
-          <TextGenerateEffect
-            words="Hi! I'm Ottobong, a UI/UX Designer &amp; Frontend Developer based in
-            Nigeria."
-            className="text-center text-[24px] md:text-md lg:text-xl"
-          />
-          <a href="/casestudies">
+          <a href="https://cal.com/ottobong/free-consultation" target="_blank">
             <MagicButton
-              title="Show my work"
-              icon={<FaLocationArrow />}
+              title="Book  free consultation"
+              icon={<FaCalendarCheck />}
               position="right"
             />
           </a>

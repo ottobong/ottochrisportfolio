@@ -1,7 +1,7 @@
 export const navItems = [
   { name: "Home", link: "/" },
   { name: "About", link: "/about" },
-  { name: "Projects", link: "/casestudies" },
+  { name: "Case studies", link: "/casestudies" },
   { name: "Testimonials", link: "/testimonials" },
   { name: "Contact", link: "#contact" },
 ];
@@ -30,7 +30,7 @@ export const gridItems = [
   {
     id: 3,
     title: "My tech stack",
-    description: "I constantly try to improve",
+    description: "From design to development",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
@@ -39,7 +39,7 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
+    title: "Your business growth and success is my goal",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -50,12 +50,12 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
-    description: "The Inside Scoop",
+    title: "Hi! I'm Ottobong Christopher",
+    description: "I'm a UI/UX Designer that is set to help your business grow.",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
-    img: "/b5.svg",
+    img: "/b5.png",
     spareImg: "/grid.svg",
   },
   {
@@ -190,29 +190,29 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "WordPress Developer",
+    desc: "Built a fully responsive website and implemented SEO features to allow the website rank on seach engines, which now makes the client over $10,000 monthly.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: "Senior UI/UX Designer",
+    desc: "Led a team of UI/UX designers in building a healthcare product that successfully onboarded over 100 medical practitioners and healthcare facilities and experiences over 50% surge in customer growth",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    title: "Frontend Engineer",
+    desc: "Developed and deployed a fully responsive website and webapp for food delivery service provider, while collaborating with a team of designers and engineers.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "UI Designer",
+    desc: "Rebranded and redesigned user interface of a fintech platform and mobile app to increase conversion rate and reduce the cognitive load on users.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
