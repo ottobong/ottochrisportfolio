@@ -2,8 +2,6 @@ export const navItems = [
   { name: "Home", link: "/" },
   { name: "About", link: "/about" },
   { name: "Case studies", link: "/casestudies" },
-  { name: "Testimonials", link: "/testimonials" },
-  { name: "Contact", link: "#contact" },
 ];
 
 export const gridItems = [
@@ -157,33 +155,63 @@ export const testimonials = [
 export const companies = [
   {
     id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
+    name: "Chef's Academy",
+    img: "/chef.svg",
+    nameImg: "/chef.svg",
   },
   {
     id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
+    name: "Dishpatch",
+    img: "/dishpatch.svg",
+    nameImg: "/dishpatch.svg",
   },
   {
     id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
+    name: "HAMA E-Auction",
+    img: "/hama.svg",
+    nameImg: "/hama.svg",
   },
   {
     id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
+    name: "Madam Freshpot",
+    img: "/madam.svg",
+    nameImg: "/madam.svg",
   },
   {
     id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
+    name: "MB PRO Limited.",
+    img: "/mb.svg",
+    nameImg: "/mb.svg",
+  },
+  {
+    id: 6,
+    name: "Medic Dishpatch",
+    img: "/medic.svg",
+    nameImg: "/medic.svg",
+  },
+  {
+    id: 7,
+    name: "Mentorix",
+    img: "/mentorix.svg",
+    nameImg: "/mentorix.svg",
+  },
+  {
+    id: 8,
+    name: "NFX Academy",
+    img: "/nfx.svg",
+    nameImg: "/nfx.svg",
+  },
+  {
+    id: 9,
+    name: "PayMasta",
+    img: "/paymasta.svg",
+    nameImg: "/paymasta.svg",
+  },
+  {
+    id: 10,
+    name: "SeeMeSave",
+    img: "/seemesave.svg",
+    nameImg: "/seemesave.svg",
   },
 ];
 
