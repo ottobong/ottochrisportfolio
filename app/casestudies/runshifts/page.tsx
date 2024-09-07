@@ -2,11 +2,8 @@
 import React from "react";
 import { navItems } from "@/data";
 
-
 import Footer from "@/components/Footer";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
-
-
 
 const StudyTwo = () => {
   return (
@@ -65,9 +62,7 @@ const StudyTwo = () => {
         Reach out to me today and let&apos;s discuss how I can help you achieve
         your goals.
       </p>
-      <div className="pb-24">
-    
-      </div>
+      <div className="pb-24"></div>
 
       {/* Conclusion */}
       <h1 className="pt-24 text-2xl text-center">

@@ -219,7 +219,7 @@ export const workExperience = [
   {
     id: 1,
     title: "WordPress Developer",
-    desc: "Built a fully responsive website and implemented SEO features to allow the website rank on seach engines, which now makes the client over $10,000 monthly.",
+    desc: "Built a fully responsive website and implemented SEO features to allow the website rank on search engines, which now makes the client over $10,000 monthly.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
@@ -250,13 +250,16 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/ottobong",
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: "/tik.svg",
+    link: "https://www.tiktok.com/@ottobongchris",
   },
   {
     id: 3,
     img: "/link.svg",
+    link: "https://linkedin.com/in/ottobongchris",
   },
 ];

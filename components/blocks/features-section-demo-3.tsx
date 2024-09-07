@@ -10,32 +10,32 @@ import Link from "next/link";
 export default function FeaturesSectionDemo() {
   const features = [
     {
-      title: "Track issues effectively",
+      title: "Entering tech",
       description:
-        "Track and manage your project issues with ease using our intuitive interface.",
+        "My tech adventure started with WordPress and no-code tools, evolving into graphics and UI/UX design. In 2018, I landed my first gig on freelancer.com - building and managing an e-commerce store. It was a pivotal moment. Suddenly, my skills weren't just for me; they were making a difference for others.",
       skeleton: <SkeletonOne />,
       className:
         "col-span-1 lg:col-span-4 border-b lg:border-r dark:border-neutral-800",
     },
     {
-      title: "Capture pictures with AI",
+      title: "How I have impacted lives",
       description:
-        "Capture stunning photos effortlessly using our advanced AI technology.",
+        "This success fueled my drive to help more people find their place in tech. Over the years, I've trained over 1,000 students, guiding them into successful tech careers. It's been incredibly rewarding to watch them grow and succeed.",
       skeleton: <SkeletonTwo />,
       className: "border-b col-span-1 lg:col-span-2 dark:border-neutral-800",
     },
     {
-      title: "Watch our AI on YouTube",
+      title: "My building journey and knowledge sharing",
       description:
-        "Whether its you or Tyler Durden, you can get to know about our product on YouTube",
+        "After seven years of collaborating with businesses and startups, I felt the pull to create something of my own. Today, I'm channeling my expertise into a revolutionary project: a language learning platform for African languages. It's more than just an app; it's a tool for cultural preservation and connection. I'm excited to share my story and the amazing work I've done with you. You can also watch my tutorials on TikTok and YouTube.",
       skeleton: <SkeletonThree />,
       className:
         "col-span-1 lg:col-span-3 lg:border-r  dark:border-neutral-800",
     },
     {
-      title: "Deploy in seconds",
+      title: "How my experience can help you",
       description:
-        "With our blazing fast, state of the art, cutting edge, we are so back cloud servies (read AWS) - you can deploy your model in seconds.",
+        "My journey from a curious kid to a tech professional and educator has been filled with challenges and triumphs. Each experience has shaped my approach to design and problem-solving. Now, I'm excited to bring this wealth of experience to your projects. Whether you're a startup looking to make your mark or an established business aiming to innovate, I'm here to help turn your vision into reality. Let's create something amazing together.",
       skeleton: <SkeletonFour />,
       className: "col-span-1 lg:col-span-3 border-b lg:border-none",
     },
@@ -47,8 +47,15 @@ export default function FeaturesSectionDemo() {
           Designer, lifelong learner, and founder
         </h4>
 
-        <p className="text-sm lg:text-base  max-w-2xl  my-4 mx-auto text-neutral-500 text-center font-normal dark:text-neutral-300">
-          Hi there! 
+        <p className="text-sm lg:text-base  max-w-5xl  my-4 mx-auto text-neutral-500 text-justify font-normal dark:text-neutral-300">
+          As a child, I was the kid who broke things apart just to see how they
+          worked. Little did I know, this curiosity would pave the way for my
+          future in tech. My journey began in an unexpected place - a primary
+          school classroom. As a part-time teacher, I discovered my passion for
+          education. This led me to the National Information Technology
+          Development Agency for my internship, where I helped train over 100
+          children in tech during a summer bootcamp for kids, igniting the same
+          curiosity I had as a child in the next generation.
         </p>
       </div>
 
@@ -93,9 +100,9 @@ const FeatureDescription = ({ children }: { children?: React.ReactNode }) => {
   return (
     <p
       className={cn(
-        "text-sm md:text-base  max-w-4xl text-left mx-auto",
-        "text-neutral-500 text-center font-normal dark:text-neutral-300",
-        "text-left max-w-sm mx-0 md:text-sm my-2"
+        "text-sm md:text-base text-left mx-auto",
+        "text-neutral-500 text-justify font-normal dark:text-neutral-300",
+        "text-left  mx-0 md:text-sm my-2"
       )}
     >
       {children}
@@ -151,11 +158,12 @@ export const SkeletonThree = () => {
 
 export const SkeletonTwo = () => {
   const images = [
+    "/RF-13.jpg",
+    "/train.jpg",
     "/RF-01.jpg",
     "/RF-7.jpg",
-    "/RF-13.jpg",
     "/b5.png",
-    "/b5.png",
+    "/trainer.jpg",
   ];
 
   const imageVariants = {
